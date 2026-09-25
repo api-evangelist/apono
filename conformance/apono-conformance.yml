@@ -1,0 +1,14 @@
+generated: '2026-09-25'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://docs.apono.io/docs/about-apono/security-and-architecture.md
+sources:
+- https://docs.apono.io/docs/about-apono/security-and-architecture.md
+- https://docs.apono.io/docs/audits-and-reports/activity-overview.md
+- https://docs.apono.io/docs/architecture-and-security/anomalies.md
+- https://docs.apono.io/docs/architecture-and-security/multi-factor-authentication.md
+standards:
+- id: soc2
+  conforms: true
+  evidence: Apono is a **SOC 2 type II certified vendor**.
+docs: https://docs.apono.io/docs/about-apono/security-and-architecture.md

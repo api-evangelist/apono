@@ -1,7 +1,6 @@
 aid: apono
 name: Apono
-description: 'Apono is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Apono provides a cloud‑native privileged access management (PAM) platform that delivers just‑in‑time, zero‑standing‑privilege access for humans, machines and AI agents. Now part of 1Password, Apono helps security, IAM and DevOps teams reduce risk by granting scoped permissions only when needed and automatically revoking them, while offering audit evidence for compliance.'
 url: https://raw.githubusercontent.com/api-evangelist/apono/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -12,12 +11,52 @@ created: '2026-09-25'
 modified: '2026-09-25'
 tags:
 - Company
-apis: []
+- Privileged Access Management
+- Cloud Security
+- Zero Standing Privilege
+- AI Agents
+- Identity Governance
+apis:
+  - name: Apono API
+    description: "API reference for Apono's privileged access management platform."
+    humanURL: https://docs.apono.io/
+    baseURL: https://api.apono.io
+
+  - aid: apono:apono-api
+
+    name: Apono API
+
+    description: 'Apono API as documented publicly: 7 operations. Contract generated from the documentation by API Evangelist (2026-09-25); not
+
+      the provider''s own document.'
+
+    humanURL: https://docs.apono.io/api-reference/new-endpoints.md
+
+    baseURL: https://api.apono.io
+
+    properties:
+
+    - type: OpenAPI
+
+      url: openapi/_ae-authored/apono-openapi-generated.yml
+
+      x-provenance: generated
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/apono-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/apono
+  url: https://www.apono.io
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: No OpenAPI, AsyncAPI, GraphQL, or other machine‑readable contract was found on the API host.
+  evidence:
+    - url: https://api.apono.io/openapi.json
+      status: 404
+  checked: 2026-09-25
