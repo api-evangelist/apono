@@ -1,0 +1,139 @@
+openapi: 3.2.0
+info:
+  title: Apono Api Reference API
+  version: '2026-09-25'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-09-25: 7 operation(s) read from 40 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; Apono has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 1
+    documentation: 6
+    pages-with-code: 1
+    pages-read: 40
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-09-25'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://docs.apono.io/api-reference/new-endpoints.md
+  - https://docs.apono.io/api-reference/administrator/audit.md
+  - https://docs.apono.io/api-reference/api-overview/readme.md
+  - https://docs.apono.io/api-reference/administrator/spaces.md
+  - https://docs.apono.io/api-reference/end-user/access-requests.md
+  - https://docs.apono.io/api-reference/end-user/access-sessions.md
+  - https://docs.apono.io/api-reference/administrator/connectivity.md
+  - https://docs.apono.io/api-reference/administrator/spaces/spaces.md
+  - https://docs.apono.io/api-reference/administrator/audit/activity.md
+  - https://docs.apono.io/api-reference/administrator/access-management.md
+  - https://docs.apono.io/api-reference/api-overview/api-authentication.md
+  - https://docs.apono.io/api-reference/administrator/spaces/space-scopes.md
+  - https://docs.apono.io/api-reference/administrator/identities-management.md
+  - https://docs.apono.io/api-reference/administrator/audit/activity-reports.md
+  - https://docs.apono.io/api-reference/discovering-identity-attribute-types.md
+  - https://docs.apono.io/api-reference/administrator/connectivity/connectors.md
+  - https://docs.apono.io/docs/webhook-integrations/webhook-payload-references.md
+  - https://docs.apono.io/api-reference/administrator/access-management/bundles.md
+  - https://docs.apono.io/api-reference/administrator/connectivity/integrations.md
+  - https://docs.apono.io/api-reference/end-user/access-requests/access-requests.md
+  - https://docs.apono.io/api-reference/end-user/access-sessions/access-sessions.md
+  - https://docs.apono.io/api-reference/administrator/identities-management/users.md
+  - https://docs.apono.io/api-reference/end-user/access-sessions/available-access.md
+  - https://docs.apono.io/api-reference/administrator/identities-management/groups.md
+  - https://docs.apono.io/api-reference/administrator/access-management/access-flows.md
+  - https://docs.apono.io/api-reference/administrator/access-management/access-scopes.md
+  - https://docs.apono.io/api-reference/administrator/identities-management/attributes.md
+  - https://docs.apono.io/api-reference/administrator/identities-management/identities.md
+  - https://docs.apono.io/docs/audits-and-reports/session-audit/session-audit-reference.md
+  - https://docs.apono.io/api-reference/end-user/access-requests/delegated-access-requests.md
+  - https://docs.apono.io/docs/agent-privilege-guard/apono-agent-privilege-guard-reference.md
+  - https://docs.apono.io/docs/access-requests-and-approvals/slack/slack-commands-reference.md
+  - https://docs.apono.io/docs/user-administration/role-based-access-control-rbac-reference.md
+  - https://docs.apono.io/docs/agent-privilege-guard/apono-agent-privilege-guard-reference/ai-agents.md
+  - https://docs.apono.io/docs/agent-privilege-guard/apono-agent-privilege-guard-reference/ai-sessions.md
+  - https://docs.apono.io/docs/webhook-integrations/webhook-payload-references/webhook-payload-schema-reference.md
+  - https://docs.apono.io/docs/audits-and-reports/session-audit/session-audit-reference/ssh-session-audit-data-reference.md
+  - https://docs.apono.io/docs/webhook-integrations/webhook-payload-references/audit-log-webhook-payload-schema-reference.md
+  - https://docs.apono.io/docs/agent-privilege-guard/apono-agent-privilege-guard-reference/model-context-protocol-mcp-servers.md
+  - https://docs.apono.io/docs/audits-and-reports/session-audit/session-audit-reference/kubernetes-session-audit-data-reference.md
+servers:
+- url: https://api.apono.io
+tags:
+- name: Api Reference
+paths:
+  /api-reference/administrator/{administratorid}:
+    get:
+      operationId: get_api_reference_administrator_administratorid
+      tags:
+      - Api Reference
+      summary: Access Management
+      description: Perform an HTTP GET request on the current page URL with the `ask` query parameter, and the optional `goal` query parameter to retrieve a direct answer and relevant excerpts from the documentation.
+      x-source: https://docs.apono.io/api-reference/administrator/access-management.md
+      parameters:
+      - name: administratorid
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: ask
+        in: query
+        required: true
+        schema:
+          type: string
+        description: The immediate question, specific and self‑contained.
+      - name: goal
+        in: query
+        required: false
+        schema:
+          type: string
+        description: Optional broader end goal for tailoring the answer.
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+        collapsed_from: 2 example path(s) differing only at administratorId
+  /api-reference/api-overview/api-authentication.md:
+    get:
+      operationId: get_api_reference_api_overview_api_authentication_md
+      tags:
+      - Api Reference
+      summary: API Authentication
+      description: Perform an HTTP GET request on the current page URL with the `ask` query parameter, and the optional `goal` query parameter to retrieve a direct answer from the documentation.
+      x-source: https://docs.apono.io/api-reference/api-overview/api-authentication.md
+      parameters:
+      - name: ask
+        in: query
+        required: true
+        schema:
+          type: string
+        description: The immediate question; should be specific, self‑contained, and written in natural language.
+      - name: goal
+        in: query
+        required: false
+        schema:
+          type: string
+        description: Optional broader end goal to help tailor the answer.
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api-reference/{apireferenceid}:
+    get:
+      operationId: get_api_reference_apireferenceid
+      tags:
+      - Api Reference
+      summary: Discovering Identity Attribute Types
+      x-source: https://docs.apono.io/api-reference/discovering-identity-attribute-types.md
+      parameters:
+      - name: apireferenceid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+        collapsed_from: 2 example path(s) differing only at apireferenceId

@@ -17,30 +17,50 @@ tags:
 - AI Agents
 - Identity Governance
 apis:
-  - name: Apono API
-    description: "API reference for Apono's privileged access management platform."
-    humanURL: https://docs.apono.io/
-    baseURL: https://api.apono.io
-
-  - aid: apono:apono-api
-
-    name: Apono API
-
-    description: 'Apono API as documented publicly: 7 operations. Contract generated from the documentation by API Evangelist (2026-09-25); not
-
-      the provider''s own document.'
-
-    humanURL: https://docs.apono.io/api-reference/new-endpoints.md
-
-    baseURL: https://api.apono.io
-
-    properties:
-
-    - type: OpenAPI
-
-      url: openapi/_ae-authored/apono-openapi-generated.yml
-
-      x-provenance: generated
+- name: Apono API
+  description: API reference for Apono's privileged access management platform.
+  humanURL: https://docs.apono.io/
+  baseURL: https://api.apono.io
+- aid: apono:apono-api-reference-api
+  name: Apono Api Reference API
+  description: The Api Reference API from Apono — 3 operation(s) for api reference.
+  humanURL: https://docs.apono.io/
+  baseURL: https://api.apono.io
+  tags:
+  - Api Reference
+  properties:
+  - type: OpenAPI
+    url: openapi/apono-api-reference-api-openapi.yml
+- aid: apono:apono-apono-api-api
+  name: Apono Apono API
+  description: The Apono API API from Apono — 1 operation(s) for apono api.
+  humanURL: https://docs.apono.io/
+  baseURL: https://api.apono.io
+  tags:
+  - Apono API
+  properties:
+  - type: OpenAPI
+    url: openapi/apono-apono-api-api-openapi.yml
+- aid: apono:apono-docs-api
+  name: Apono Docs API
+  description: The Docs API from Apono — 2 operation(s) for docs.
+  humanURL: https://docs.apono.io/
+  baseURL: https://api.apono.io
+  tags:
+  - Docs
+  properties:
+  - type: OpenAPI
+    url: openapi/apono-docs-api-openapi.yml
+- aid: apono:apono-user-api
+  name: Apono User API
+  description: The User API from Apono — 1 operation(s) for user.
+  humanURL: https://docs.apono.io/
+  baseURL: https://api.apono.io
+  tags:
+  - User
+  properties:
+  - type: OpenAPI
+    url: openapi/apono-user-api-openapi.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
