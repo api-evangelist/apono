@@ -19,7 +19,12 @@
     "apono-openapi-generated.yml: tagged paths GET /api/user/v1/delegated-access-requests -> User",
     "apono-openapi-generated.yml: declared missing tag: Apono API",
     "apono-openapi-generated.yml: declared missing tag: User",
-    "apis.yml register: written (+4 apis, 5 total)"
+    "apis.yml register: already-registered"
   ],
-  "skipped": []
+  "skipped": [
+    "apono-api-reference-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "apono-apono-api-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "apono-docs-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "apono-user-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
