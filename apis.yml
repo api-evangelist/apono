@@ -27,6 +27,8 @@ apis:
   humanURL: https://docs.apono.io/
   baseURL: https://api.apono.io
   tags:
+  - API Reference
+  tags_raw:
   - Api Reference
   properties:
   - type: OpenAPI
